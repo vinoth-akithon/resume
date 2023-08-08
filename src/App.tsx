@@ -3,6 +3,8 @@ import ClickableIcon from "./components/ClickableIcon";
 import {useEffect} from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import profileImg from './assets/images/python.png'
+import contactIcons from './assets/icons/sprite1.svg'
 
 function App() {
   useEffect(() => {
@@ -13,7 +15,7 @@ function App() {
       <section className="profile-about grid grid--1x2">
         <div className="profile" data-aos="flip-left" data-aos-duration="2000">
           <div className="profile__image-container">
-            <img src="../src/assets/images/python.png" alt="python" />
+            <img src={profileImg} alt="python" />
           </div>
           <div className="profile__content-container">
             <h1 className="profile__content-name">VINOTH KUMAR M</h1>
@@ -21,22 +23,22 @@ function App() {
             <div className="profile__content-contact">
               <ClickableIcon
                 redirectLink="https://www.google.com"
-                iconSourceLink="../src/assets/icons/sprite1.svg#linkedin"
+                iconSourceLink={`${contactIcons}#linkedin`}
                 container={true}
               />
               <ClickableIcon
                 redirectLink="https://www.google.com"
-                iconSourceLink="../src/assets/icons/sprite1.svg#github"
+                iconSourceLink={`${contactIcons}#github`}
                 container={true}
               />
               <ClickableIcon
                 redirectLink="https://www.google.com"
-                iconSourceLink="../src/assets/icons/sprite1.svg#whatsapp"
+                iconSourceLink={`${contactIcons}#whatsapp`}
                 container={true}
               />
               <ClickableIcon
                 redirectLink="https://www.google.com"
-                iconSourceLink="../src/assets/icons/sprite1.svg#mail"
+                iconSourceLink={`${contactIcons}#mail`}
                 container={true}
               />
             </div>

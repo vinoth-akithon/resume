@@ -1,15 +1,17 @@
 import ClickableIcon from "./components/ClickableIcon";
 // import StaticIcon from "./components/StaticIcon";
-import {useEffect} from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import profileImg from './assets/images/python.png'
-import contactIcons from './assets/icons/sprite1.svg'
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import profileImg from "./assets/images/python.png";
+import contactIcons from "./assets/icons/sprite1.svg";
+import Skills from "./sections/Skills";
+import SectionHeader from "./components/SectionHeader";
 
 function App() {
   useEffect(() => {
     AOS.init();
-  }, [])
+  }, []);
   return (
     <div className="container">
       <section className="profile-about grid grid--1x2">
@@ -45,10 +47,12 @@ function App() {
           </div>
         </div>
         <div className="about">
-          <h2 className="section__heading">
-            <span className="banner banner--right-cliped">About Me</span>
-          </h2>
-          <ul className="about__content" data-aos="fade-left" data-aos-duration="1000">
+          <SectionHeader headerText={"About Me"} />
+          <ul
+            className="about__content"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
             <li className="test">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Repudiandae earum nulla ea repellendus accusantium assumenda?
@@ -75,9 +79,7 @@ function App() {
       <hr style={{ marginTop: "20px" }} />
 
       <section className="experience">
-        <h2 className="section__heading">
-          <span className="banner banner--right-cliped">Experience</span>
-        </h2>
+        <SectionHeader headerText={"Experience"} />
         <div className="timeline">
           <div className="timeline__container left" data-aos="fade-right">
             <div className="content experiance-card">
@@ -111,7 +113,7 @@ function App() {
               </ul>
             </div>
           </div>
-          <div className="timeline__container left"  data-aos="fade-right">
+          <div className="timeline__container left" data-aos="fade-right">
             <div className="content experiance-card">
               <h3 className="role grid grid--1x2">
                 Software Engineer<span>Feb 2022 - April 2022</span>
@@ -127,7 +129,7 @@ function App() {
               </ul>
             </div>
           </div>
-          <div className="timeline__container right"  data-aos="fade-left">
+          <div className="timeline__container right" data-aos="fade-left">
             <div className="content experiance-card">
               <h3 className="role grid grid--1x2">
                 Software Engineer Trainee<span>Oct 2021 - Jan 2022</span>
@@ -162,11 +164,8 @@ function App() {
         </div>
       </section>
       <hr style={{ marginTop: "20px" }} />
-
-      <section className="skils">
-        <h2 className="section__heading">
-          <span className="banner banner--right-cliped">Technical Skill</span>
-        </h2>
+      <section className="skills">
+        <Skills />
       </section>
     </div>
   );

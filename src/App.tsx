@@ -7,6 +7,7 @@ import profileImg from "./assets/images/python.png";
 import contactIcons from "./assets/icons/sprite1.svg";
 import Skills from "./sections/Skills";
 import SectionHeader from "./components/SectionHeader";
+import Awards from "./sections/Awards";
 
 function App() {
   useEffect(() => {
@@ -167,6 +168,10 @@ function App() {
       <section className="skills">
         <Skills />
       </section>
+      <hr style={{ margin: "50px 0 20px 0" }} />
+      <section className="awards">
+      </section>
+        <Awards />
     </div>
   );
 }

@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import SectionHeader from "../components/SectionHeader";
 import SkillCard from "../components/SkillCard";
 import pythonSkill from "../assets/images/python.webp";

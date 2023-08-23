@@ -5,6 +5,12 @@ interface ExperianceCardProps {
   duration: string;
   companyName: string;
   contribution: string[];
+  style?: Object
+  durationPosition?: string;
+}
+
+interface DurationPosition {
+  position: string;
 }
 
 const Container = styled.div`
@@ -43,13 +49,13 @@ const Role = styled.h3`
   }
 `;
 
-const Duration = styled.span`
+const Duration = styled.span<DurationPosition>`
   background-color: var(--color-primary);
   color: #fff;
   font-size: 1.5rem;
   padding: 0.5rem 1.2rem;
   border-radius: 20px;
-  justify-self: end;
+  justify-self: ${props => props.position};
   align-self: baseline;
 
   @media (min-width: 768px) {
@@ -66,11 +72,13 @@ function ExperianceCard({
   duration,
   companyName,
   contribution,
+  style={},
+  durationPosition="end"
 }: ExperianceCardProps) {
   return (
-    <Container>
+    <Container style={style}>
       <Role className="grid grid--1x2">
-        {role} <Duration>{duration}</Duration>
+        {role} <Duration position={durationPosition}>{duration}</Duration>
       </Role>
       <Company>{companyName}</Company>
       <Contribution>

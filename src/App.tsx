@@ -5,6 +5,7 @@ import Skills from "./sections/Skills";
 import Awards from "./sections/Awards";
 import Experience from "./sections/Experiances";
 import ProfileAbout from "./sections/ProfileAbout";
+import Education from "./sections/Education";
 
 function App() {
   useEffect(() => {
@@ -12,13 +13,15 @@ function App() {
   }, []);
   return (
     <div className="container">
-        <ProfileAbout />
+      <ProfileAbout />
       <hr style={{ marginTop: "20px" }} />
-        <Experience/>
+      <Experience />
       <hr style={{ marginTop: "20px" }} />
-        <Skills />
+      <Education />
+      <hr style={{ marginTop: "50px" }} />
+      <Skills />
       <hr style={{ margin: "50px 0 20px 0" }} />
-        <Awards />
+      <Awards />
     </div>
   );
 }

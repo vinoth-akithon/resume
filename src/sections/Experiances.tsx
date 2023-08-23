@@ -76,7 +76,8 @@ function Experience() {
             <div
               key={index}
               className={`timeline__container ${cardSide}`}
-              // data-aos={`fade-${cardSide == "left" ? "right" : "left"}`}
+              data-aos={`fade-top`}
+              data-aos-duration="1000"
             >
               <ExperianceCard {...item} />
             </div>

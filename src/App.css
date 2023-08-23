@@ -21,8 +21,6 @@ body {
 
 .container {
   max-width: 900px;
-  /* overflow: hidden; */
-  height: 5000px;
   margin: 20px;
   padding: 20px;
   border-radius: 10px;

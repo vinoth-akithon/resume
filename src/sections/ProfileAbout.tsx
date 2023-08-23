@@ -6,7 +6,7 @@ import SectionHeader from "../components/SectionHeader";
 import pythonLogo from "../assets/icons/python.svg";
 
 const Container = styled.div`
-  gap: 4rem 3rem;
+  gap: 4rem 5rem;
 `;
 
 const ImageContainer = styled.div`
@@ -108,6 +108,12 @@ function ProfileAbout() {
       redirectLink:
         "mailto:vinoth.akithon@gmail.com?subject=Hello&body=Hi%20Vinoth,%0D%0AI%20hope%20you%20are%20doing%20well.",
       iconSourceLink: `${contactIcons}#mail`,
+      container: true,
+    },
+    {
+      redirectLink:
+        "https://maps.app.goo.gl/dB31ewjxkTV35rf16",
+      iconSourceLink: `${contactIcons}#location`,
       container: true,
     },
   ];

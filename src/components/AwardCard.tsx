@@ -57,7 +57,7 @@ function AwardCard({ details }: AwardCardProps) {
   const { videoSource, highLights } = details;
 
   return (
-    <AwardCardContainer>
+    <AwardCardContainer data-aos="zoom-in">
       <IFrame
         src={videoSource}
         title="Outstanding Performance Award"
@@ -65,8 +65,8 @@ function AwardCard({ details }: AwardCardProps) {
         allowFullScreen
       />
       <HighlightContainer>
-        {highLights.map((item) => (
-          <HighLight>{item}</HighLight>
+        {highLights.map((item, index) => (
+          <HighLight key={index}>{item}</HighLight>
         ))}
       </HighlightContainer>
     </AwardCardContainer>

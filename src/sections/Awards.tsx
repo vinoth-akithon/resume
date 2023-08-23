@@ -17,8 +17,8 @@ function Awards() {
   return (
     <>
       <SectionHeader headerText={"awards"} />
-      {AwardLists.map((item) => (
-        <AwardCard details={item} />
+      {AwardLists.map((item, index) => (
+        <AwardCard key={index} details={item} />
       ))}
     </>
   );

@@ -3,14 +3,14 @@ import constants from "../constants";
 
 interface SkillCard {
   skillImageUrl: string;
-  backgroundColor: string;
+  cardColor: string;
   skillTitle: string;
   skillText: string[];
   className?: string
 }
 
 interface HeaderBackground {
-  backgroundColor: string;
+  cardColor: string;
 }
 
 const SkillCardWraper = styled.div`
@@ -32,7 +32,7 @@ const SkillHeader = styled.div<HeaderBackground>`
   border-radius: 100% 0% 100% 0% / 0% 50% 50% 100%;
   display: grid;
   place-items: center;
-  background-image: ${(props) => props.backgroundColor};
+  background-image: ${(props) => props.cardColor};
 `;
 
 const SkillContent = styled.div`
@@ -65,20 +65,20 @@ const CardText = styled.ul`
 
 function SkillCard({
   skillImageUrl,
-  backgroundColor,
+  cardColor,
   skillTitle,
   skillText,
 }: SkillCard) {
   return (
     <SkillCardWraper>
-      <SkillHeader backgroundColor={backgroundColor}>
+      <SkillHeader cardColor={cardColor}>
           <SkillImage src={skillImageUrl} alt="skill logo" />
       </SkillHeader>
       <SkillContent>
         <CardTitle>{skillTitle}</CardTitle>
         <CardText>
-          {skillText.map((item) => (
-            <li style={{marginBottom: "5px"}}>{item}</li>
+          {skillText.map((item, index) => (
+            <li key={index} style={{marginBottom: "5px"}}>{item}</li>
           ))}
         </CardText>
       </SkillContent>

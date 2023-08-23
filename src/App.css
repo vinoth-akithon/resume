@@ -21,6 +21,7 @@ body {
 
 .container {
   max-width: 900px;
+  /* overflow: hidden; */
   height: 5000px;
   margin: 20px;
   padding: 20px;
@@ -50,63 +51,7 @@ body {
   }
 }
 
-/* Profile section */
-
-.profile-about {
-  gap: 4rem 3rem
-}
-
-.profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-.profile__image-container {
-  background-color: #fff;
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  margin-top: 2rem;
-}
-
-.profile__image-container img {
-  width: 100%;
-}
-
-.profile__content-container {
-  text-align: center;
-}
-
-.profile__content-name {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-.profile__content-role {
-  font-size: 1.7rem;
-  margin-bottom: 2rem;
-}
-
-.profile__content-contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 2rem;
-}
-
-
-@media screen and (min-width: 1024px) {
-  .profile__content-name {
-    font-size: 2.5rem;
-  }
-
-  .profile__content-role {
-    font-size: 1.5rem;
-  }
-}
+/* Comman Icon */
 
 .icon-container {
   background-color: #fff;
@@ -123,83 +68,14 @@ body {
   fill: var(--color-primary)
 }
 
-.banner {
-  padding: 5px 75px 5px 25px;
-  background-color: var(--color-primary); 
-  color: #fff;
-}
 
-.banner--right-cliped {
-  clip-path: polygon(0% 0%, 75% 0%, 100% 100%, 75% 100%, 0% 100%);
-}
+/* Experiance Timeline Section */
 
-.banner--right-arrow {
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
-}
-
-.section__heading {
-  font-size: 3rem;
-  text-transform: uppercase;
-  margin: 3rem 0;
-  letter-spacing: 4px;
-}
-
-.about {
-  text-align: justify;
-}
-
-.about__content {
-  list-style-type: none;
-  font-weight: 500;
-  font-size: 1.5rem;
-}
-
-.about__content li {
-  position: relative;
-  padding-left: 2.5rem;
-  line-height: 1.5; 
-}
-
-.about__content li::before {
-  content: ""; 
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%); 
-  width: 20px; 
-  height: 20px; 
-  background-image: url("./assets/icons/python.svg"); 
-  background-repeat: no-repeat; 
-  margin-right: 10px;
-}
-
-@media screen and (min-width: 1024px) {
-  .about {
-    text-align: left;
-  }
-}
-
-.timeline {
-  position: relative;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
-  content: '';
-  position: absolute;
-  width: 6px;
-  background-color: #b5b5b5;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
-}
-
-/* Container around content */
 .timeline__container {
   padding: 1rem;
   position: relative;
   width: 50%;
+  display: flex;
 }
 
 /* The circles on the timeline */
@@ -222,8 +98,9 @@ body {
 }
 
 .right {
-  left: 50%;
+  left: 0%;
   padding: 0 0 0 4rem;
+  margin-left: 50%;
 
 }
 
@@ -257,20 +134,7 @@ body {
   left: 5px;
 }
 
-.content {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-  box-shadow:
-    inset 0 0 10px rgba(11, 22, 63, 0.5),
-    0 0 2px rgba(11, 22, 63, 0.5); 
-}
-
 @media screen and (max-width: 600px) {
-  .timeline::after {
-  left: 4px;
-  }
   
   .timeline__container {
   width: 100%;
@@ -296,57 +160,12 @@ body {
   .right {
   left: 0%;
   padding: 1rem 0 1rem 5rem;
-  }
-}
-
-.role {
-  font-size: 2.4rem;
-  gap: 0.5rem 0;
-  margin-bottom: 0.5rem;
-}
-
-.role span {
-  background-color: var(--color-primary);
-  color: #fff;
-  font-size: 1.5rem;
-  padding: 0.5rem 1.2rem;
-  border-radius: 20px;
-  justify-self: end;
-  align-self: baseline;
-}
-
-@media screen and (max-width: 768px) {
-  .role span {
-    grid-row: 1
+  margin-left: 0;
   }
 }
 
 
-.company-name {
-  font-style: italic;
-  font-size: 1.6rem;
-}
-
-
-@media screen and (min-width: 768px) {
-  .role span {
-    font-size: 1rem;
-  }
-  .role {
-    font-size: 2rem;
-    grid-template-columns: 1fr auto;
-  }
-  .company-name {
-    font-size: 1.2rem
-  }
-}
-
-.contribution {
-  list-style-type:disc;
-  padding-left: 1.5rem;
-  margin-top: 0.8rem;
-  font-size: 1.6rem;
-}
+/* Skill Section Carousel */
 
 .carousel-container {
   padding: 0 2rem;

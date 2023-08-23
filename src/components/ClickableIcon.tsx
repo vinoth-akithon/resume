@@ -1,3 +1,4 @@
+
 interface ClickableIconProps {
   redirectLink: string;
   iconSourceLink: string;

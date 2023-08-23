@@ -13,7 +13,7 @@ import "slick-carousel/slick/slick-theme.css";
 function Skills() {
   const skillCards = [
     {
-      backgroundColor:
+      cardColor:
         "radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% )",
       skillImageUrl: pythonSkill,
       skillTitle: "python",
@@ -24,7 +24,7 @@ function Skills() {
       ],
     },
     {
-      backgroundColor:
+      cardColor:
         "radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% )",
       skillImageUrl: javascriptSkill,
       skillTitle: "javascript",
@@ -35,7 +35,7 @@ function Skills() {
       ],
     },
     {
-      backgroundColor:
+      cardColor:
         "radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% )",
       skillImageUrl: htmlSkill,
       skillTitle: "html",
@@ -46,7 +46,7 @@ function Skills() {
       ],
     },
     {
-      backgroundColor:
+      cardColor:
         "radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% )",
       skillImageUrl: cssSkill,
       skillTitle: "css",
@@ -57,7 +57,7 @@ function Skills() {
       ],
     },
     {
-      backgroundColor:
+      cardColor:
         "radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% )",
       skillImageUrl: nodeSkill,
       skillTitle: "node js",
@@ -104,7 +104,7 @@ function Skills() {
             <SkillCard
               key={index}
               skillImageUrl={card.skillImageUrl}
-              backgroundColor={card.backgroundColor}
+              cardColor={card.cardColor}
               skillTitle={card.skillTitle}
               skillText={card.skillText}
             />

@@ -1,10 +1,12 @@
-
 :root {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --color-primary: rgb(11, 22, 63)
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --color-primary: rgb(11, 22, 63);
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -16,7 +18,7 @@ html {
 
 body {
   background-color: var(--color-primary);
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
 
 .container {
@@ -24,10 +26,10 @@ body {
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #EDEDED;
+  background-color: #ededed;
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px) {
   .container {
     margin: 20px auto;
   }
@@ -37,15 +39,15 @@ body {
   display: grid;
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .grid--1x2 {
-      grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
   }
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
   .grid--1x3 {
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -53,7 +55,8 @@ body {
 
 .icon-container {
   background-color: #fff;
-  box-shadow:inset 0 0 10px rgba(11, 22, 63, 0.5), 0 8px 6px -6px var(--color-primary);
+  box-shadow: inset 0 0 10px rgba(11, 22, 63, 0.5),
+    0 8px 6px -6px var(--color-primary);
   width: 40px;
   height: 40px;
   display: inline-flex;
@@ -63,9 +66,8 @@ body {
 }
 
 .icon {
-  fill: var(--color-primary)
+  fill: var(--color-primary);
 }
-
 
 /* Experiance Timeline Section */
 
@@ -78,7 +80,7 @@ body {
 
 /* The circles on the timeline */
 .timeline__container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 20px;
   height: 20px;
@@ -99,7 +101,6 @@ body {
   left: 0%;
   padding: 0 0 0 4rem;
   margin-left: 50%;
-
 }
 
 .left::before {
@@ -133,35 +134,34 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  
   .timeline__container {
-  width: 100%;
-  padding-left: 50px;
-  padding-right: 25px;
-  }
-  
-  .timeline__container::before {
-  left: 40px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 25px;
   }
 
-  .left::after, .right::after {
-  left: 10px;
+  .timeline__container::before {
+    left: 40px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after,
+  .right::after {
+    left: 10px;
   }
 
   .left {
     padding: 1rem 0 1rem 5rem;
   }
-  
+
   .right {
-  left: 0%;
-  padding: 1rem 0 1rem 5rem;
-  margin-left: 0;
+    left: 0%;
+    padding: 1rem 0 1rem 5rem;
+    margin-left: 0;
   }
 }
-
 
 /* Skill Section Carousel */
 
@@ -170,7 +170,107 @@ body {
 }
 .slick-prev::before,
 .slick-next::before {
-  color: var(--color-primary) !important; 
+  color: var(--color-primary) !important;
   font-size: 25 !important;
+}
+
+@media screen and (max-width: 600px) {
+  .slick-dots {
+    display: none !important;
+  }
+}
+
+
+/* background logo animation */
+.leaf {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    position: relative;
+  }
+
+  .leaf {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .leaf2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+  }
+  .leaf div {
+    position: absolute;
+    display: block;
+  }
+  .leaf div:nth-child(1) {
+    left: calc(((100% - 900px) / 2) + 900px + 50px);
+    animation: fall 15s linear infinite;
+    animation-delay: -2s;
+  }
+  .leaf div:nth-child(2) {
+    left: calc(((100% - 900px) / 2) + 900px + 100px);
+    animation: fall 15s linear infinite;
+    animation-delay: -4s;
+  }
+  .leaf div:nth-child(3) {
+    left: calc(((100% - 900px) / 2) + 900px + 150px);
+    animation: fall 20s linear infinite;
+    animation-delay: -7s;
+  }
   
+  .leaf div:nth-child(4) {
+    right: calc(((100% - 900px) / 2) + 900px + 50px);
+    animation: fall 14s linear infinite;
+    animation-delay: -5s;
+  }
+  .leaf div:nth-child(5) {
+    right: calc(((100% - 900px) / 2) + 900px + 100px);
+    animation: fall 16s linear infinite;
+    animation-delay: -10s;
+  }
+  .leaf div:nth-child(6) {
+    right: calc(((100% - 900px) / 2) + 900px + 150px);
+    animation: fall 15s linear infinite;
+    animation-delay: -4s;
+  }
+  
+
+  @keyframes fall {
+    0% {
+      opacity: 1;
+      top: -10%;
+      transform: translateX (20px) rotate(0deg);
+    }
+    20% {
+      opacity: 0.8;
+      transform: translateX (-20px) rotate(45deg);
+    }
+    40% {
+      transform: translateX (-20px) rotate(90deg);
+    }
+    60% {
+      transform: translateX (-20px) rotate(135deg);
+    }
+    80% {
+      transform: translateX (-20px) rotate(180deg);
+    }
+    100% {
+      top: 100%;
+      transform: translateX (-20px) rotate(225deg);
+    }
+  }
+
+  .leaf2 {
+    transform: rotate(180deg);
+  }
 }

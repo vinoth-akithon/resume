@@ -6,7 +6,7 @@ import SectionHeader from "../components/SectionHeader";
 import pythonLogo from "../assets/icons/python.svg";
 
 const Container = styled.div`
-  gap: 4rem 5rem;
+  gap: 4rem;
 `;
 
 const ImageContainer = styled.div`
@@ -71,6 +71,13 @@ const AboutContent = styled.li`
   position: relative;
   padding-left: 2.5rem;
   line-height: 1.5;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  opacity: 0.85;
+
+  @media (min-width: 1024px) {
+    margin-bottom: 0.5rem;
+  }
 
   &::before {
     content: "";
@@ -111,17 +118,19 @@ function ProfileAbout() {
       container: true,
     },
     {
-      redirectLink:
-        "https://maps.app.goo.gl/dB31ewjxkTV35rf16",
+      redirectLink: "https://maps.app.goo.gl/dB31ewjxkTV35rf16",
       iconSourceLink: `${contactIcons}#location`,
       container: true,
     },
   ];
   const aboutContent = [
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Repudiandae earum nulla ea repellendus accusantium assumenda? Sequiut animi consequatur fugiat?",
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Repudiandae earum nulla ea repellendus accusantium assumenda? Sequiut animi consequatur fugiat?",
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Repudiandae earum nulla ea repellendus accusantium assumenda? Sequiut animi consequatur fugiat?",
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit.Repudiandae earum nulla ea repellendus accusantium assumenda? Sequiut animi consequatur fugiat?",
+    "Experienced backend developer with over 2 years in Python, Flask, and Django.",
+    "Skilled in MongoDB and AWS for robust database management and scalable app hosting.",
+    "Able to design software apps using various patterns, prioritizing performance, modularity, scalabilitya and industry standards.",
+    "Proficient in algorithms for effective problem-solving.",
+    "Dedicated to delivering high-quality results and contributing effectively to dynamic teams.",
+    "Solid grasp of front-end tech, agile, payment gateways and various software developement tools.",
+    "Eager learner adaptable to emerging tech.",
   ];
 
   return (

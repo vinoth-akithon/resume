@@ -35,7 +35,8 @@ const Contribution = styled.ul`
   list-style-type: disc;
   padding-left: 1.5rem;
   margin-top: 0.8rem;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  opacity: 0.8;
 `;
 
 const Role = styled.h3`
@@ -83,7 +84,7 @@ function ExperianceCard({
       <Company>{companyName}</Company>
       <Contribution>
         {contribution.map((item, index) => (
-          <li key={index}>{item}</li>
+          <li key={index} style={{marginBottom: "0.5rem"}}>{item}</li>
         ))}
       </Contribution>
     </Container>

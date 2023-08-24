@@ -6,10 +6,8 @@ function Awards() {
     {
       videoSource: "https://www.youtube.com/embed/BgOLFt8keJM",
       highLights: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Honored with the Outstanding Performance Award from Bon AI Solutions for demonstrating exemplary dedication, innovation, and contributions to the team and projects.",
+        "This award recognizes my consistent commitment to excellence, problem-solving skills, and positive impact on the organization's success.",
         
     ],
     },

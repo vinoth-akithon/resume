@@ -26,9 +26,13 @@ function Education() {
   const educationdetails = {
     degree: "Bachlor of Engineering in Electrical and Electronics",
     duration: "Sep 2017 - Aug 2021",
-    collegeName: "OASYS Institute of Technology, Thiruchirappalli, Tamil Nadu, India",
-
-  }
+    collegeName:
+      "OASYS Institute of Technology, Thiruchirappalli, Tamil Nadu, India",
+    contribution: [
+      "During my studies, I attended various workshops  on cutting-edge technologies which provided hands-on experiences.",
+      "I also participated in various national level technical symposiums, hackathons and completed courses on NPTEL.",
+    ],
+  };
   return (
     <>
       <SectionHeader headerText="Education" />
@@ -40,8 +44,8 @@ function Education() {
           role={educationdetails.degree}
           duration={educationdetails.duration}
           companyName={educationdetails.collegeName}
-          contribution={[]}
-          style={{ margin: "10px", boxShadow: "none", paddingTop: 0 }}
+          contribution={educationdetails.contribution}
+          style={{ margin: "10px", boxShadow: "none" }}
           durationPosition="center"
         />
       </Container>

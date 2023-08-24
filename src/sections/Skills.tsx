@@ -16,20 +16,14 @@ import dockerSkill from "../assets/images/docker.webp";
 import expressSkill from "../assets/images/express.webp";
 import flaskSkill from "../assets/images/flask.webp";
 import gitSkill from "../assets/images/git.webp";
-import jsonSkill from "../assets/images/json.webp";
-import jwtSkill from "../assets/images/jwt.webp";
 import linuxSkill from "../assets/images/linux.webp";
 import mongodbSkill from "../assets/images/mongodb.webp";
-import postmanSkill from "../assets/images/postman.webp";
 import razorpaySkill from "../assets/images/razorpay.webp";
 import reactSkill from "../assets/images/react.webp";
 import stripeSkill from "../assets/images/stripe.webp";
 import sqlSkill from "../assets/images/sql.webp";
 import testingSkill from "../assets/images/testing.webp";
 import typescriptSkill from "../assets/images/typescript.webp";
-
-
-
 
 function Skills() {
   const skillCards = [
@@ -39,9 +33,9 @@ function Skills() {
       skillImageUrl: pythonSkill,
       skillTitle: "python",
       skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Proficient in writing efficient and clean Python code.",
+        "Skilled in implementing algorithms and data structures in Python.",
+        "Excellent in Object Oriented Programming paradigm.",
       ],
     },
     {
@@ -50,131 +44,28 @@ function Skills() {
       skillImageUrl: javascriptSkill,
       skillTitle: "javascript",
       skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Proficient in writing modern JavaScript code for both front-end and back-end applications.",
+        "Skilled in asynchronous programming, handling events, and working with APIs.",
       ],
     },
     {
       cardColor:
-        "linear-gradient( 111.4deg,  rgba(238,113,113,1) 1%, rgba(246,215,148,1) 58% );",
-      skillImageUrl: htmlSkill,
-      skillTitle: "html",
-      skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      ],
-    },
-    {
-      cardColor:
-        "linear-gradient( 184.1deg,  rgba(249,255,182,1) 44.7%, rgba(226,255,172,1) 67.2% );",
-      skillImageUrl: cssSkill,
-      skillTitle: "css",
-      skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      ],
-    },
-    {
-      cardColor:
-        "linear-gradient( 58.2deg,  rgba(40,91,212,0.73) -3%, rgba(171,53,163,0.45) 49.3%, rgba(255,204,112,0.37) 97.7% );",
-      skillImageUrl: nodeSkill,
-      skillTitle: "node js",
-      skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      ],
-    },
-
-    {
-      cardColor:
-        "linear-gradient( 90.1deg,  rgba(84,212,228,1) 0.2%, rgba(68,36,164,1) 99.9% );",
-      skillImageUrl: sqlSkill,
-      skillTitle: "sql",
-      skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      ],
-    },
-    {
-      cardColor:
-        "radial-gradient( circle farthest-corner at 0.2% 0.5%,  rgba(68,36,164,1) 3.7%, rgba(84,212,228,1) 92.7% );",
-      skillImageUrl: dockerSkill,
-      skillTitle: "docker",
-      skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      ],
-    },
-    {
-      cardColor:
-        "linear-gradient( 91deg,  rgba(72,154,78,1) 5.2%, rgba(251,206,70,1) 95.9% );",
-      skillImageUrl: testingSkill,
-      skillTitle: "Automation Testing",
-      skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      ],
-    },
-    {
-      cardColor:
-        "radial-gradient( circle farthest-corner at 10% 20%,  rgba(237,3,32,0.87) 20.8%, rgba(242,121,1,0.84) 74.4% );",
-      skillImageUrl: awsSkill,
-      skillTitle: "aws",
-      skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      ],
-    },
-    {
-      cardColor:
-        "radial-gradient( circle 763px at 18.3% 24.1%,  rgba(255,249,137,1) 7.4%, rgba(226,183,40,1) 58.3% );",
-      skillImageUrl: linuxSkill,
-      skillTitle: "Bash Scripting",
-      skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      ],
-    },
-    {
-      cardColor:
-        "linear-gradient( 173.1deg,  rgba(226,66,249,0.94) 10.2%, rgba(79,147,249,1) 77.3% );",
-      skillImageUrl: apiSkill,
-      skillTitle: "Rest API",
-      skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      ],
-    },
-    {
-      cardColor:
-        "linear-gradient( 129.1deg,  rgba(243,199,83,1) 26.8%, rgba(18,235,207,1) 114.1% );",
+        "linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);",
       skillImageUrl: typescriptSkill,
       skillTitle: "typescript",
       skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Proficient in writing type-safe and statically-typed code using TypeScript.",
+        "Skilled in leveraging TypeScript's features for improved code quality and maintainability.",
       ],
     },
     {
       cardColor:
-        "radial-gradient( circle farthest-corner at 10% 20%,  rgba(171,102,255,1) 0%, rgba(116,182,247,1) 90% );",
-      skillImageUrl: mongodbSkill,
-      skillTitle: "mongodb",
+      "linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);",
+      skillImageUrl: awsSkill,
+      skillTitle: "aws",
       skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Proficient in deploying applications on AWS using services like EC2, S3, and RDS.",
+        "Experienced in setting up and managing scalable and reliable cloud infrastructures.",
       ],
     },
     {
@@ -183,9 +74,28 @@ function Skills() {
       skillImageUrl: flaskSkill,
       skillTitle: "flask",
       skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Experienced in creating RESTful APIs and integrating database systems.",
+        "Skilled in routing, template rendering, and enhancing app functionality with extensions.",
+      ],
+    },
+    {
+      cardColor:
+        "linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);",
+      skillImageUrl: mongodbSkill,
+      skillTitle: "mongodb",
+      skillText: [
+        "Proficient in designing and implementing MongoDB database structures.",
+        "Experienced in querying (aggregation) and indexing data efficiently using MongoDB.",
+      ],
+    },
+    {
+      cardColor:
+        "linear-gradient( 173.1deg,  rgba(226,66,249,0.94) 10.2%, rgba(79,147,249,1) 77.3% );",
+      skillImageUrl: apiSkill,
+      skillTitle: "Rest API",
+      skillText: [
+        "Proficient in designing and developing RESTful APIs for web applications.",
+        "Skilled in versioning, documentation, and best practices for building scalable APIs.",
       ],
     },
     {
@@ -194,99 +104,48 @@ function Skills() {
       skillImageUrl: djangoSkill,
       skillTitle: "django",
       skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Experienced in building RESTful APIs, working with models, and ORM.",
+        "Skilled in authentication, routing, and enhancing app functionality with third-party packages.",
       ],
     },
-
-
     {
       cardColor:
-        "radial-gradient( circle farthest-corner at 7.2% 13.6%,  rgba(37,249,245,1) 0%, rgba(8,70,218,1) 90% );",
-      skillImageUrl: jwtSkill,
-      skillTitle: "jwt",
+        "linear-gradient( 111.4deg,  rgba(238,113,113,1) 1%, rgba(246,215,148,1) 58% );",
+      skillImageUrl: htmlSkill,
+      skillTitle: "html",
       skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Proficient in writing semantic and accessible HTML markup.",
+        "Skilled in working with forms, multimedia elements, and optimizing page performance and best practices.",
       ],
     },
     {
       cardColor:
-        "linear-gradient( 178.9deg,  rgba(176,57,105,1) 5.1%, rgba(229,113,159,1) 109.3% );",
-      skillImageUrl: stripeSkill,
-      skillTitle: "stripe",
+        "linear-gradient( 184.1deg,  rgba(249,255,182,1) 44.7%, rgba(226,255,172,1) 67.2% );",
+      skillImageUrl: cssSkill,
+      skillTitle: "css",
       skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Proficient in styling web pages with CSS for a visually appealing and responsive design.",
+        "Skilled in layout techniques, flexbox, and CSS grid for creating dynamic layouts.",
       ],
     },
     {
       cardColor:
-        "radial-gradient( circle 941px at 2.6% 6.8%,  rgba(124,74,228,0.81) 15.9%, rgba(249,208,40,0.70) 88.6% );",
-      skillImageUrl: razorpaySkill,
-      skillTitle: "razorpay",
-      skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      ],
-    },
-    {
-      cardColor:
-        "radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,221,214,1) 0%, rgba(51,102,255,1) 90% );",
-      skillImageUrl: postmanSkill,
-      skillTitle: "postman",
-      skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      ],
-    },
-    {
-      cardColor:
-        "linear-gradient( 89.9deg,  rgba(255,243,110,1) 16.9%, rgba(30,204,214,1) 55.1%, rgba(5,54,154,1) 90.7% );",
+        "linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);",
       skillImageUrl: reactSkill,
       skillTitle: "react",
       skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Proficient in building dynamic and interactive user interfaces.",
+        "Skilled in component-based architecture, routing, and integrating third-party libraries.",
       ],
     },
     {
       cardColor:
-        "linear-gradient( 103.3deg,  rgba(252,225,208,1) 30%, rgba(255,173,214,1) 55.7%, rgba(162,186,245,1) 81.8% );",
-      skillImageUrl: gitSkill,
-      skillTitle: "git",
+        "linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);",
+      skillImageUrl: nodeSkill,
+      skillTitle: "node js",
       skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      ],
-    },
-    {
-      cardColor:
-        "radial-gradient( circle 674px at 18.3% 77%,  rgba(139,186,244,1) 3.4%, rgba(15,51,92,1) 56.6% );",
-      skillImageUrl: jsonSkill,
-      skillTitle: "json",
-      skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-      ],
-    },
-    {
-      cardColor:
-        "radial-gradient( circle 780.6px at 10% 20%,  rgba(133,255,189,1) 0%, rgba(255,251,125,1) 90.7% );",
-      skillImageUrl: arduinoSkill,
-      skillTitle: "arduino",
-      skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Proficient in building server-side applications using Node.js.",
+        "Skilled in asynchronous programming, handling middleware, and working with databases.",
       ],
     },
     {
@@ -295,11 +154,93 @@ function Skills() {
       skillImageUrl: expressSkill,
       skillTitle: "express",
       skillText: [
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        "Proficient in building web applications and APIs using Express.js framework.",
+        "Experienced in routing, middleware, and handling HTTP requests and responses.",
       ],
-    }
+    },
+    
+    {
+      cardColor:
+        "linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);",
+      skillImageUrl: sqlSkill,
+      skillTitle: "sql",
+      skillText: [
+        "Proficient in designing and querying relational databases using SQL.",
+        "Experienced in creating complex database queries and optimizing query performance.",
+      ],
+    },
+    {
+      cardColor:
+        "linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);",
+      skillImageUrl: dockerSkill,
+      skillTitle: "docker",
+      skillText: [
+        "Proficient in containerization and using Docker to deploy applications.",
+        "Experienced in creating Docker images, containers, and managing Docker networks.",
+      ],
+    },
+    {
+      cardColor:
+        "linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);",
+      skillImageUrl: testingSkill,
+      skillTitle: "Automation Testing",
+      skillText: [
+        "Proficient in writing unit tests and integration tests to ensure code quality.",
+        "Skilled in test-driven development (TDD) to build reliable and maintainable code.",
+      ],
+    },
+    {
+      cardColor:
+        "radial-gradient( circle 763px at 18.3% 24.1%,  rgba(255,249,137,1) 7.4%, rgba(226,183,40,1) 58.3% );",
+      skillImageUrl: linuxSkill,
+      skillTitle: "Bash",
+      skillText: [
+        "Proficient in working with Unix and Unix-like operating systems.",
+        "Experienced in command-line navigation, scripting, cron and system administration.",
+      ],
+    },
+    
+    {
+      cardColor:
+        "linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);",
+      skillImageUrl: stripeSkill,
+      skillTitle: "stripe",
+      skillText: [
+        "Proficient in integrating Stripe for online payment processing and subscription management.",
+        "Experienced in setting up payment gateways, handling transactions, and managing customers.",
+      ],
+    },
+    {
+      cardColor:
+        "linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);",
+      skillImageUrl: razorpaySkill,
+      skillTitle: "razorpay",
+      skillText: [
+        "Proficient in integrating Razorpay for online payment processing and invoicing.",
+        "Experienced in implementing secure payment flows and managing customers.",
+      ],
+    },
+    {
+      cardColor:
+        "linear-gradient( 103.3deg,  rgba(252,225,208,1) 30%, rgba(255,173,214,1) 55.7%, rgba(162,186,245,1) 81.8% );",
+      skillImageUrl: gitSkill,
+      skillTitle: "git",
+      skillText: [
+        "Proficient in version control using Git and GitHub for collaborative software development.",
+        "Experienced in branching, merging, and resolving merge conflicts and github pages.",
+      ],
+    },
+
+    {
+      cardColor:
+        "radial-gradient( circle 780.6px at 10% 20%,  rgba(133,255,189,1) 0%, rgba(255,251,125,1) 90.7% );",
+      skillImageUrl: arduinoSkill,
+      skillTitle: "arduino",
+      skillText: [
+        "Experienced in programming microcontrollers, sensors, and actuators.",
+        "Skilled in integrating Arduino with IoT platforms and creating interactive applications.",
+      ],
+    },
   ];
   const settings = {
     adaptiveHeight: true,
@@ -322,10 +263,10 @@ function Skills() {
         breakpoint: 480, // Adjust this breakpoint as needed
         settings: {
           slidesToShow: 1, // Show 1 card at a time on mobile
-          fade: true
+          fade: true,
         },
       },
-    ]
+    ],
   };
 
   return (

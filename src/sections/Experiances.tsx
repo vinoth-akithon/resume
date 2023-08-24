@@ -30,7 +30,8 @@ function Experience() {
       duration: "Oct 2022 - Present",
       companyName: "Bon AI Solutions, Thiruchirappalli, Tamil Nadu, India.",
       contribution: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.Perspiciatis, cupiditate.",
+        "Led and managed the backend team, ensuring efficient project execution.",
+        "Collaborated with cross-functional teams to deliver high-quality solutions."
       ],
     },
     {
@@ -38,7 +39,8 @@ function Experience() {
       duration: "May 2022 - Sep 2022",
       companyName: "Bon AI Solutions, Thiruchirappalli, Tamil Nadu, India.",
       contribution: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.Perspiciatis, cupiditate.",
+        "Developed and optimized backend functionalities for web applications.",
+        "Contributed to API development and database management."
       ],
     },
     {
@@ -46,7 +48,8 @@ function Experience() {
       duration: "Feb 2022 - April 2022",
       companyName: "Artifintel Private Limited, Chennai, Tamil Nadu, India.",
       contribution: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.Perspiciatis, cupiditate.",
+        "Implemented software solutions to meet project requirements.",
+        "Collaborated with the team to troubleshoot and resolve issues."
       ],
     },
     {
@@ -54,21 +57,31 @@ function Experience() {
       duration: "Oct 2021 - Jan 2022",
       companyName: "Artifintel Private Limited, Chennai, Tamil Nadu, India.",
       contribution: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.Perspiciatis, cupiditate.",
+        "Gained hands-on experience in software development practices.",
+        "Assisted in coding, testing, and debugging software modules."
       ],
     },
     {
       role: "Software Engineer Intern",
-      duration: "May 2021 - Sep 2021",
+      duration: "Jun 2021 - Sep 2021",
       companyName: "Artifintel Private Limited, Chennai, Tamil Nadu, India.",
       contribution: [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit.Perspiciatis, cupiditate.",
+        "Worked on various stages of software development life cycle.",
+        "Supported the team in coding and testing of features."
+      ],
+    },
+    {
+      role: "Python Machine Learning Intern",
+      duration: "May 2021 - May 2021",
+      companyName: "Gateway Software Solutions, Gandhipuram, Tamil Nadu, India.",
+      contribution: [
+        "Gained insights into machine learning algorithms and techniques.",
       ],
     },
   ];
   return (
     <>
-      <SectionHeader headerText={"Experience"} />
+      <SectionHeader headerText={"Experiences"} />
       <Container>
         {ExperianceCards.map((item, index) => {
           const cardSide = index % 2 == 0 ? "left" : "right";
